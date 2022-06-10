@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailwayE-TicketReservationSystem", "RailwayE-TicketReservationSystem\RailwayE-TicketReservationSystem.csproj", "{CA5301E6-C943-4879-A253-3C71DAB90AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWebApp", "ClientWebApp\ClientWebApp.csproj", "{EDD0F947-EC2D-4F21-BEA0-57B063E0BDBA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA5301E6-C943-4879-A253-3C71DAB90AFC} = {CA5301E6-C943-4879-A253-3C71DAB90AFC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5301E6-C943-4879-A253-3C71DAB90AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5301E6-C943-4879-A253-3C71DAB90AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5301E6-C943-4879-A253-3C71DAB90AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5301E6-C943-4879-A253-3C71DAB90AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD0F947-EC2D-4F21-BEA0-57B063E0BDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD0F947-EC2D-4F21-BEA0-57B063E0BDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD0F947-EC2D-4F21-BEA0-57B063E0BDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD0F947-EC2D-4F21-BEA0-57B063E0BDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {839D8E7E-EEC7-4B79-9A52-F92464DCAEAA}
+	EndGlobalSection
+EndGlobal

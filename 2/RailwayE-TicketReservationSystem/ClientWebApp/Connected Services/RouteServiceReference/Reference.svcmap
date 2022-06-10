@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ad3654fc-8c65-4820-ba89-32a3a9c44aa2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="749b97f0-bbb6-48ec-8eff-a571381a2c1a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="7dbb9845-1144-48cd-9b4d-456ed44e8212" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/?xsd=xsd0" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="99bf3ec6-379a-42e7-a6f6-190a664b94f3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="6055ed73-5a60-4ce2-b291-56db2951a666" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/?disco" />
+    <MetadataFile FileName="RouteService.wsdl" MetadataType="Wsdl" ID="2adc7b55-16e9-4350-85be-c86b72bafe20" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/RouteService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

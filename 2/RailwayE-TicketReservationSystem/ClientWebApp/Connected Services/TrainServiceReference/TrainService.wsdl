@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="TrainService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/TrainService/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/TrainService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/TrainService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RailwayE_TicketReservationSystem" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITrain_AddTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_AddTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_DeactiveTrain_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactiveTrain" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_DeactiveTrain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactiveTrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_UpdateAvailability_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAvailability" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_UpdateAvailability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_GetTrains_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrains" />
+  </wsdl:message>
+  <wsdl:message name="ITrain_GetTrains_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrainsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITrain">
+    <wsdl:operation name="AddTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrain/AddTrain" message="tns:ITrain_AddTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrain/AddTrainResponse" message="tns:ITrain_AddTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactiveTrain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrain/DeactiveTrain" message="tns:ITrain_DeactiveTrain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrain/DeactiveTrainResponse" message="tns:ITrain_DeactiveTrain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrain/UpdateAvailability" message="tns:ITrain_UpdateAvailability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrain/UpdateAvailabilityResponse" message="tns:ITrain_UpdateAvailability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrains">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrain/GetTrains" message="tns:ITrain_GetTrains_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrain/GetTrainsResponse" message="tns:ITrain_GetTrains_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITrain" type="tns:ITrain">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddTrain">
+      <soap:operation soapAction="http://tempuri.org/ITrain/AddTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactiveTrain">
+      <soap:operation soapAction="http://tempuri.org/ITrain/DeactiveTrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAvailability">
+      <soap:operation soapAction="http://tempuri.org/ITrain/UpdateAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrains">
+      <soap:operation soapAction="http://tempuri.org/ITrain/GetTrains" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TrainService">
+    <wsdl:port name="BasicHttpBinding_ITrain" binding="tns:BasicHttpBinding_ITrain">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/RailwayE_TicketReservationSystem/TrainService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
